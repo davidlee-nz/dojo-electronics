@@ -26,7 +26,7 @@ SoftwareSerial HC12(HC12TxdPin,HC12RxdPin); // Create Software Serial Port
 void setup() {
 
   pinMode(HC12SetPin, OUTPUT);                  // Output High for Transparent / Low for Command
-  digitalWrite(HC12SetPin, LOW);               // Enter Transparent mode
+  digitalWrite(HC12SetPin, HIGH);               // Enter Transparent mode
   delay(80);                                    // 80 ms delay before operation per datasheet
   
   Serial.begin(9600);                       // Open serial port to computer
